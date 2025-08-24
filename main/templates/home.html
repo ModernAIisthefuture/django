@@ -1,0 +1,26 @@
+<!--1 main/templates/home.html 
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Django Home</title>
+</head>
+<body>
+    <h1>Welcome, {{ name }}!</h1>
+</body>
+</html>-->
+
+<!-- main/templates/home.html -->
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Django Home</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>Welcome, {{ name }}!</h1>
+</body>
+</html>
